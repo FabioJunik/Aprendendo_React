@@ -1,0 +1,58 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    padding: 20px 50px;
+}
+
+.searchContent input{
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:20px ;
+}
+
+.user-info img{
+    width: 250px;
+    border-radius: 50%;
+}
+.user-info .basic-info{
+    margin: 20px;
+}
+.user-info h1 a{
+    color: #000;
+    /* background-color: #ff0000; */
+}
+.user-info .repos-info{
+    font-size: 17px;
+}
+
+.user-info .repos-info li{
+    margin-top: 10px;
+}
+.actions{
+    width: 100%;
+}
+
+.actions button{
+    width: 180px;
+    padding: 10px 20px;
+    border: none;
+    margin: 20px 10px 0 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.user-info .repos{
+    width: 100%;
+}
