@@ -7,7 +7,7 @@ const UserInfo = ({userInfo})=>(
 			
 			<div className='basic-info'>
 				<h1 className='username'>
-					<a href = {`https://github.com/${userInfo.login}`}>Fábio Junik</a>
+					<a href = {`https://github.com/${userInfo.login}`}>{userInfo.name}</a>
 				</h1>
 
 				<ul className='repos-info'>
