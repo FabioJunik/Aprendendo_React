@@ -1,0 +1,32 @@
+.container{
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    transition: transform ease .3s;
+}
+
+.item{
+    width: 90%;
+    height: 90vh;
+    margin: 0 5%;
+    background-size:cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    inset: 0;
+
+}
+
+.nav img{
+    cursor: pointer;
+}
