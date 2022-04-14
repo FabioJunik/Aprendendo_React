@@ -1,0 +1,25 @@
+.contatos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.dados{
+    padding: 0;
+    list-style: none;
+}
+
+.dados li{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: .8rem;
+}
+
+.dados li::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background-color: #ddd;
+    margin-right: 10px;
+}
