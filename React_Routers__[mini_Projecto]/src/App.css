@@ -16,6 +16,17 @@ h1{
     font-size: 1.4rem;
 }
 
+.App{
+    max-width: 40rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh + 10rem);
+}
+
+.content{
+    flex: 1;
+}
 .animeLeft{
     transform: translateX(-20px);
     opacity: 0;

@@ -1,9 +1,12 @@
 import React from 'react'
-import './Footer.module.css';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <div><h1>Footer</h1></div>
+    <footer className={styles.footer}>
+      <p>Site criado por <b>Fábio Junik</b> <br/>
+        Seguindo as orientações de André Rafael by Origamid</p>
+    </footer>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import styles from './Produtos.module.css';
+import Head from './Head';
 
 const Produtos = () => {
   const [produtos , setProdutos] = useState(null);
@@ -14,9 +15,9 @@ const Produtos = () => {
     <>
       {produtos && 
         <section className={styles.produtos +' animeLeft'}  >
+          <Head title='Ranek' description='Descrição do site Ranek' />
           {produtos.map(produto=>(
             <Link to={`produto/${produto.id}`} key={produto.id}>
-              {console.log(produto)}
               <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo}/>
               <h1 className={styles.nome}>{produto.nome}</h1>
             </Link>
