@@ -28,3 +28,18 @@ h1{
         opacity: initial;
     }    
 }
+
+.loading{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 7px solid #ccc;
+    border-right-color: transparent;
+    animation: loading 1s infinite;
+}
+
+@keyframes loading {
+    to{
+        transform: rotate(360deg);
+    }
+}
