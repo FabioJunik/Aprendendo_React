@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Produto.module.css';
+import Head from './Head';
 
 const Produto = () => {
     const {id} = useParams();
@@ -14,6 +15,7 @@ const Produto = () => {
                 setLoading(true);
                 const response = await fetch(url);
                 const json = await response.json();
+                console.log(json)
                 setProduto(json)
 
             }catch(erro){
@@ -29,11 +31,20 @@ const Produto = () => {
     if(loading) return <div>Carregando...</div>
     if(error) return <p>{error}</p>
     if(!produto) return
-
+    
     return (
-    <div className={styles.produto}>
-        <h1>Produto</h1>
-    </div>
+        <section className={styles.produto +' animeLeft'}>
+            <Head title={`Ranek | ${produto.nome}`} 
+                description={`Ranek | Este é um produto: ${produto.nome}`} />
+            <div>
+                {produto.fotos.map(foto => <img key={foto.src} src={foto.src} alt={foto.titulo} />)}
+            </div>
+            <div >
+                <h1>{produto.nome}</h1>
+                <span className={styles.preco}>{produto.preco}</span>
+                <p className={styles.descricao}>{produto.descricao}</p>
+            </div>
+        </section>
   )
 }
 
